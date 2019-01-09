@@ -35,9 +35,11 @@ case class ItemPref(
                      val pref: Double) extends Serializable
 /**
   * 用户推荐.
+  * @param recommid 推荐唯一标识
   * @param userid 用户
   * @param itemid 推荐物品
   * @param pref 评分
+  * @param timestamp 时间
   */
 case class UserRecomm( val recommid: String,
                        val userid: String,
